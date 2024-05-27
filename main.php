@@ -15,8 +15,8 @@
             </h1>
         </div>
         <div class="right">
+            <button>게스트로 가입</button>
             <button id="loginBtn">로그인</button>
-            <button id="joinBtn">회원가입</button>
         </div>
     </main>
 
