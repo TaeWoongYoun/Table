@@ -9,29 +9,34 @@
 <body>
 <table>
     <tr>
-        <th scope="col">id</td>
-        <th scope="col">name</td>
-        <th scope="col">Join Date</td>
+        <th scope="col">ID</td>
+        <th scope="col">Name</td>
+        <th scope="col">City</td>
+        <th scope="col">JoinDate</td>
     </tr>
     <tr>
-        <td>user</td>
-        <td>company</td>
+        <td>01</td>
         <td>user1</td>
+        <td>seoul</td>
+        <td>2024-05-27</td>
     </tr>
     <tr>
-        <td>admin</td>
-        <td>company</td>
-        <td>admin1</td>
-    </tr>
-    <tr>
-        <td>user</td>
-        <td>company</td>
+        <td>02</td>
         <td>user2</td>
+        <td>seoul</td>
+        <td>2024-05-27</td>
     </tr>
     <tr>
-        <td>user</td>
-        <td>company</td>
+        <td>03</td>
+        <td>admin</td>
+        <td>seoul</td>
+        <td>2024-05-27</td>
+    </tr>
+    <tr>
+        <td>04</td>
         <td>user3</td>
+        <td>seoul</td>
+        <td>2024-05-27</td>
     </tr>
 </table>
 </body>
