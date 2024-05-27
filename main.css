@@ -46,3 +46,41 @@ main{
 .right button:nth-child(2){
     color: #395886;
 }
+
+.loginModal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+}
+
+.formInput{
+    width: 300px;
+    height: 20px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.btnBox{
+    position: absolute;
+    bottom: 0;
+    width: 350px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formBtn{
+    width: 70px;
+    height: 30px;
+    margin: 5px;
+}

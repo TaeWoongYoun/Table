@@ -15,9 +15,23 @@
             </h1>
         </div>
         <div class="right">
-            <button>로그인</button>
-            <button>회원가입</button>
+            <button id="loginBtn">로그인</button>
+            <button id="joinBtn">회원가입</button>
         </div>
     </main>
+
+    <div class="loginModal">
+        <h2>로그인</h2>
+        <form action="login.php" method="post">
+            <p><input type="text" name="userid" id="userid" require placeholder="아이디" class="formInput"></p>
+            <p><input type="password" name="userpw" id="userpw" require placeholder="비밀번호" class="formInput"></p>
+            <div class="btnBox">
+                <input type="submit" value="로그인" class="formBtn">
+                <input type="reset" value="취소" class="formBtn" id="closeBtn">
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
