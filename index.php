@@ -1,9 +1,10 @@
+<?php $conn = mysqli_connect('localhost', 'root', '', 'adminDB')?>
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>표 만들기</title>
+    <title>테이블</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,30 +15,19 @@
         <th scope="col">City</td>
         <th scope="col">JoinDate</td>
     </tr>
-    <tr>
-        <td>01</td>
-        <td>user1</td>
-        <td>seoul</td>
-        <td>2024-05-27</td>
-    </tr>
-    <tr>
-        <td>02</td>
-        <td>user2</td>
-        <td>seoul</td>
-        <td>2024-05-27</td>
-    </tr>
-    <tr>
-        <td>03</td>
-        <td>admin</td>
-        <td>seoul</td>
-        <td>2024-05-27</td>
-    </tr>
-    <tr>
-        <td>04</td>
-        <td>user3</td>
-        <td>seoul</td>
-        <td>2024-05-27</td>
-    </tr>
+        <?php
+            $sql = "SELECT * FROM adminTable";
+            $result = mysqli_query($conn, $sql);
+            while ($row = mysqli_fetch_array($result)){
+                echo "
+                    <tr>
+                        <td>{$row['id']}</td>
+                        <td>{$row['name']}</td>
+                        <td>{$row['city']}</td>
+                        <td class='date'>{$row['JoinDate']}</td>
+                    </tr>";
+            }
+        ?>
 </table>
 </body>
 </html>
