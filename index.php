@@ -16,16 +16,33 @@
         <th scope="col">JoinDate</td>
     </tr>
         <?php
-            $sql = "SELECT * FROM adminTable";
-            $result = mysqli_query($conn, $sql);
-            while ($row = mysqli_fetch_array($result)){
-                echo "
+            if (isset($_GET['id']) && $_GET['id'] === 'admin') {
+                $sql = "SELECT * FROM adminTable";
+                $result = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_array($result)) {
+                    echo "
                     <tr>
                         <td>{$row['id']}</td>
                         <td>{$row['name']}</td>
                         <td>{$row['city']}</td>
                         <td class='date'>{$row['JoinDate']}</td>
+                        <td><input type='submit' value='UPDATE' class='sqlBtn'></td>
+                        <td><input type='submit' value='DELETE' class='sqlBtn'></td>
                     </tr>";
+                }
+                echo "<td colspan='6'><button class='sqlBtn'>INSERT</button></td>";
+            } else {
+                $sql = "SELECT * FROM adminTable";
+                $result = mysqli_query($conn, $sql);
+                while ($row = mysqli_fetch_array($result)){
+                    echo "
+                        <tr>
+                            <td>{$row['id']}</td>
+                            <td>{$row['name']}</td>
+                            <td>{$row['city']}</td>
+                            <td class='date'>{$row['JoinDate']}</td>
+                        </tr>";
+                }
             }
         ?>
 </table>
