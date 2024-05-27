@@ -9,19 +9,29 @@
 <body>
 <table>
     <tr>
-        <th scope="col">이름</td>
-        <th scope="col">소속</td>
-        <th scope="col">특이사항</td>
+        <th scope="col">id</td>
+        <th scope="col">name</td>
+        <th scope="col">Join Date</td>
     </tr>
     <tr>
-        <td>윤도연</td>
-        <td>방송부</td>
-        <td>여자에 미침</td>
+        <td>user</td>
+        <td>company</td>
+        <td>user1</td>
     </tr>
     <tr>
-        <td>원필립</td>
-        <td>기능반</td>
-        <td>유령회원</td>
+        <td>admin</td>
+        <td>company</td>
+        <td>admin1</td>
+    </tr>
+    <tr>
+        <td>user</td>
+        <td>company</td>
+        <td>user2</td>
+    </tr>
+    <tr>
+        <td>user</td>
+        <td>company</td>
+        <td>user3</td>
     </tr>
 </table>
 </body>
