@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 table{ 
     position: absolute;
     top: 50%;

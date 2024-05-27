@@ -30,7 +30,7 @@
                         <td><input type='submit' value='DELETE' class='sqlBtn'></td>
                     </tr>";
                 }
-                echo "<td colspan='6'><button class='sqlBtn'>INSERT</button></td>";
+                echo "<td colspan='6'><button class='sqlBtn'><a href='create.php'>CREATE</a></button></td>";
             } else {
                 $sql = "SELECT * FROM adminTable";
                 $result = mysqli_query($conn, $sql);
