@@ -14,6 +14,7 @@
         <th scope="col">Name</td>
         <th scope="col">City</td>
         <th scope="col">JoinDate</td>
+        <th scope="col">Action</td>
     </tr>
         <?php
             $sql = "SELECT * FROM adminTable";
@@ -22,20 +23,21 @@
                 echo "
                     <tr>
                         <td>{$row['id']}</td>
-                        <form action='updateProcess.php' method='post'>
-                            <td><input type='text' name='name' id='name' class='createInput' value='{$row['name']}'></td>
-                            <td><input type='text' name='city' id='city' class='createInput' value='{$row['city']}'></td>
-                        </form>
+                        <td>
+                            <form action='updateProcess.php' method='post'>
+                                <input type='hidden' name='id' value='{$row['id']}'>
+                                <input type='text' name='name' id='name' class='createInput' value='{$row['name']}'>
+                        </td>
+                        <td>
+                                <input type='text' name='city' id='city' class='createInput' value='{$row['city']}'>
+                        </td>
                         <td class='date'>{$row['JoinDate']}</td>
+                        <td>
+                                <input type='submit' value='Update' class='createBtn'>
+                            </form>
+                        </td>
                     </tr>";
             }
-            echo "
-                    <form action='updateProcess.php' method='post'>
-                        <td>UPDATE</td>
-                        <td></td>
-                        <td></td>
-                        <td><input type='submit' value='제출' class='createBtn'></td>
-                    </form>";
         ?>
 </table>
 </body>
