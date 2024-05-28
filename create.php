@@ -25,11 +25,16 @@
                     <td>{$row['name']}</td>
                     <td>{$row['city']}</td>
                     <td class='date'>{$row['JoinDate']}</td>
-                    <td><input type='submit' value='UPDATE' class='sqlBtn'></td>
-                    <td><input type='submit' value='DELETE' class='sqlBtn'></td>
                 </tr>";
             }
-            echo "<td colspan='6'><button class='sqlBtn'><a href='create.php'>CREATE</a></button></td>";
+            echo "
+                    <form action='createProcess.php' method='post'>
+                        <td>create</td>
+                        <td><input type='text' name='name' id='name' placeholder='name' class='createInput'></td>
+                        <td><input type='text' name='city' id='city' placeholder='city' class='createInput'></td>
+                        <td>알아서 입력됨;;</td>
+                        <td><input type='submit' value='제출' class='createBtn'></td>
+                    </form>";
         ?>
 </table>
 </body>
