@@ -27,7 +27,12 @@
                         <td>{$row['city']}</td>
                         <td class='date'>{$row['JoinDate']}</td>
                         <td><a href='update.php?id={$row['id']}'><button class='sqlBtn'>UPDATE</button></a></td>
-                        <td><input type='submit' value='DELETE' class='sqlBtn'></td>
+                        <td>
+                            <form action='delete.php' method='post'>
+                                <input type='hidden' name='id' value='{$row['id']}'>
+                                <input type='submit' value='DELETE' class='sqlBtn'>                            
+                            </form>    
+                        </td>
                     </tr>";
                 }
                 echo "<td colspan='6'><button class='sqlBtn'><a href='create.php'>CREATE</a></button></td>";
