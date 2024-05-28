@@ -26,7 +26,7 @@
                         <td>{$row['name']}</td>
                         <td>{$row['city']}</td>
                         <td class='date'>{$row['JoinDate']}</td>
-                        <td><input type='submit' value='UPDATE' class='sqlBtn'></td>
+                        <td><a href='update.php'><button class='sqlBtn'>UPDATE</button></a></td>
                         <td><input type='submit' value='DELETE' class='sqlBtn'></td>
                     </tr>";
                 }
@@ -45,6 +45,8 @@
                 }
             }
         ?>
+
+
 </table>
 </body>
 </html>
