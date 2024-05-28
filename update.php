@@ -26,9 +26,10 @@
     }
     ?>
     <tr>
-        <td><?=$row['id']; ?></td>
         <form action='updateProcess.php' method='post'>
-        <td><input type='text' name='name' id='name' placeholder='name' class='createInput' value='<?=$row['name']; ?>'></td>
+            <input type="hidden" name="id" value="<?=$row['id']; ?>">
+            <td><?=$row['id']; ?></td>
+            <td><input type='text' name='name' id='name' placeholder='name' class='createInput' value='<?=$row['name']; ?>'></td>
             <td><input type='text' name='city' id='city' placeholder='city' class='createInput' value='<?=$row['city']?>'></td>
             <td class='date'><?=$row['JoinDate']; ?></td>
             <td><input type='submit' value='제출' class='createBtn'></td>
