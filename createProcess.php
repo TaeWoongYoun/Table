@@ -12,9 +12,9 @@
     mysqli_query($conn, $sql)
     ?>
 
-    <a href="index.php?id=admin">돌아가기</a>
     <script>
         alert("생성 완료")
+        location.href='index.php?id=admin'
     </script>
 </body>
 </html>
