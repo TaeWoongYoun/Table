@@ -39,7 +39,7 @@
             <p><input type="password" name="joinpw" id="joinpw" require placeholder="비밀번호" class="formInput"></p>
             <p><input type="password" name="joinpw-check" id="joinpw-check" require placeholder="비밀번호 확인" class="formInput"></p>
             <div class="btnBox">
-                <input type="submit" value="로그인" class="formBtn">
+                <input type="submit" value="회원가입" class="formBtn join">
                 <input type="reset" value="취소" class="formBtn closeBtn" id="closeBtn">
             </div>
         </form>
