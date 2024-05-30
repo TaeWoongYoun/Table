@@ -35,7 +35,10 @@
     <div class="joinModal" id="joinModal">
         <h2>회원가입</h2>
         <form action="join.php" method="post">
-            <p><input type="text" name="joinid" id="joinid" require placeholder="아이디" class="formInput"></p>
+            <p>
+                <input type="text" name="joinid" id="joinid" require placeholder="아이디" class="formInput">
+                <!-- <input type="button" value="중복 확인"> -->
+            </p>
             <p><input type="password" name="joinpw" id="joinpw" require placeholder="비밀번호" class="formInput"></p>
             <p><input type="password" name="joinpw-check" id="joinpw-check" require placeholder="비밀번호 확인" class="formInput"></p>
             <div class="btnBox">

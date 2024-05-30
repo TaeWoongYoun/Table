@@ -43,14 +43,14 @@ document.querySelector('.join').addEventListener('click', function(event){
 
     if (userpw.value == ''){
         alert('비밀번호를 입력해주세요');
-        userid.focus();
+        userpw.focus();
         event.preventDefault();
         return false;
     }
 
-    if (userpw.value == usercheck.value){
+    if (userpw.value != usercheck.value){
         alert('비밀번호가 다릅니다. 다시 입력해주세요');
-        userid.focus();
+        userpw.focus();
         event.preventDefault();
         return false;
     }
