@@ -62,6 +62,20 @@ main{
     display: none;
 }
 
+.joinModal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+}
+
 .formInput{
     width: 300px;
     height: 20px;

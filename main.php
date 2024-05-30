@@ -15,11 +15,11 @@
             </h1>
         </div>
         <div class="right">
-            <button>게스트로 가입</button>
             <button id="loginBtn">로그인</button>
+            <button id="joinBtn">회원가입</button>
         </div>
     </main>
-
+    
     <div class="loginModal">
         <h2>로그인</h2>
         <form action="login.php" method="post">
@@ -27,7 +27,20 @@
             <p><input type="password" name="userpw" id="userpw" require placeholder="비밀번호" class="formInput"></p>
             <div class="btnBox">
                 <input type="submit" value="로그인" class="formBtn">
-                <input type="reset" value="취소" class="formBtn" id="closeBtn">
+                <input type="reset" value="취소" class="formBtn closeBtn">
+            </div>
+        </form>
+    </div>
+
+    <div class="joinModal" id="joinModal">
+        <h2>회원가입</h2>
+        <form action="join.php" method="post">
+            <p><input type="text" name="joinid" id="joinid" require placeholder="아이디" class="formInput"></p>
+            <p><input type="password" name="joinpw" id="joinpw" require placeholder="비밀번호" class="formInput"></p>
+            <p><input type="password" name="joinpw-check" id="joinpw-check" require placeholder="비밀번호 확인" class="formInput"></p>
+            <div class="btnBox">
+                <input type="submit" value="로그인" class="formBtn">
+                <input type="reset" value="취소" class="formBtn closeBtn" id="closeBtn">
             </div>
         </form>
     </div>
