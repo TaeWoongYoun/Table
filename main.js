@@ -8,10 +8,12 @@ let join = document.getElementById('joinModal');
 
 loginBtn.addEventListener('click', function(){
     login.style.display = 'block';
+    join.style.display = 'none';
 })
 
 joinBtn.addEventListener('click', function(){
     join.style.display = 'block';
+    login.style.display = 'none';
 })
 
 closeBtn.addEventListener('click', function(){
