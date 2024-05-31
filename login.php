@@ -32,15 +32,6 @@
             location.href='index.php?id=manager'
         </script>
         ";
-    } elseif ($id == '' && $pw == '') {
-        $_SESSION["userid"] == $id;
-        $_SESSION["userpw"] == $pw;
-
-        echo "
-        <script>
-            alert('회원가입을 먼저 진행해주세요.')
-            location.href='main.php'
-        </script>";
     } else {
         $sql = "SELECT * FROM user_join WHERE userid='$id' AND password='$pw'";
         $result= mysqli_query($conn, $sql);
