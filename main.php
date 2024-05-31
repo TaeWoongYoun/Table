@@ -36,8 +36,8 @@
         <h2>회원가입</h2>
         <form action="join.php" method="post">
             <p>
-                <input type="text" name="joinid" id="joinid" require placeholder="아이디" class="formInput">
-                <!-- <input type="button" value="중복 확인"> -->
+                <input type="text" name="joinid" id="joinid" require placeholder="아이디" class="formInput" style="width: 200px;">
+                <input type="submit" value="중복 확인" id="check" onclick="checkId()">
             </p>
             <p><input type="password" name="joinpw" id="joinpw" require placeholder="비밀번호" class="formInput"></p>
             <p><input type="password" name="joinpw-check" id="joinpw-check" require placeholder="비밀번호 확인" class="formInput"></p>
@@ -47,8 +47,6 @@
             </div>
         </form>
     </div>
-
     <script src="main.js"></script>
-
 </body>
 </html>
