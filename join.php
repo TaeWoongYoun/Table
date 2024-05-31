@@ -9,3 +9,8 @@
 
     mysqli_query($conn, $sql);
 ?>
+
+<script>
+    alert('회원가입 성공')
+    location.href = "main.php"
+</script>
