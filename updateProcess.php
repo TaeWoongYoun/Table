@@ -1,6 +1,5 @@
 <?php $conn = mysqli_connect('localhost', 'root', '', 'adminDB')?>
 <?php
-    settype($_POST['id'], 'integer');
     $filter = array(
         'id'=>mysqli_real_escape_string($conn, $_POST['id']),
         'name'=>mysqli_real_escape_string($conn, $_POST['name']),
