@@ -1,5 +1,10 @@
 <?php $conn = mysqli_connect('localhost', 'root', '', 'adminDB')?>
 <?php
+    // $filter = array(
+    //     'id'=>mysqli_real_escape_string($conn, $_POST['id']),
+    //     'name'=>mysqli_real_escape_string($conn, $_POST['name']),
+    //     'city'=>mysqli_real_escape_string($conn, $_POST['city'])
+    // );
     $id = mysqli_real_escape_string($conn, $_POST['id']);
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $city = mysqli_real_escape_string($conn, $_POST['city']);
