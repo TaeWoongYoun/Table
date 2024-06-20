@@ -1,10 +1,7 @@
 <?php $conn = mysqli_connect('localhost', 'root', '', 'adminDB')?>
 <?php
-    settype($_POST['id'], 'integer');
-    $filter = array(
-        'id'=> mysqli_real_escape_string($conn, $_POST['id'])
-    );
-    $sql = "DELETE FROM adminTable WHERE id = {$filter['id']}";
+    $id = mysqli_real_escape_string($conn, $_POST['id']);
+    $sql = "DELETE FROM adminTable WHERE id = $id";
     $result = mysqli_query($conn, $sql)
 ?>
 
