@@ -9,9 +9,9 @@
 
     echo $select = "SELECT * FROM user_join WHERE userid='$userid'";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        echo $userid = mysqli_real_escape_string($conn, $_POST['joinid']);
-        echo $select = "SELECT * FROM user_join WHERE userid='$userid'";
-        echo $result = mysqli_query($conn, $select);
+        $userid = mysqli_real_escape_string($conn, $_POST['joinid']);
+        $select = "SELECT * FROM user_join WHERE userid='$userid'";
+        $result = mysqli_query($conn, $select);
         if (mysqli_num_rows($result) > 0) {
             echo "<script>
                     alert('이미 사용중인 아이디입니다.');
@@ -26,5 +26,5 @@
 
 <script>
     alert('회원가입 성공')
-    // location.href = "main.php"
+    location.href = "main.php"
 </script>
